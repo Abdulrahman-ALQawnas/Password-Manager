@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="box col-md-8 m-3">
+            <h2>Password Manager</h2>
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <!-- <label for="username">Username:</label> -->
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+                <div class="col-md-4">
+                    <!-- <label for="password">Password:</label> -->
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="col-md-4">
+                    <button id="storePassword" class="m-0">Store Password</button>
+                </div>
+            </div>
+            <p class="mb-3">Password Strength: <span id="passwordStrength" class="fa-bold">Weak</span></p>
+            <div class="row">
+                <div class="col-md-8">
+                    <label for="accountSelect">Select Account:</label>
+                    <select id="accountSelect"></select>
+                </div>
+                <div class="col-md-4 align-content-end">
+                    <button id="retrievePassword" class="m-0">Retrieve Password</button>
+                </div>
+            </div>
+        </div>
+        <div class="box col-md-8 m-3">
+            <h3>Passwords :</h3>
+            <ul id="passwordList"></ul>
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <label for="exportButton">To Export Passwords Click Export button </label>
+                </div>
+                <div class="col-md-4">
+                    <button id="exportButton">Export Passwords</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <label for="exportButton" class="">choose JSON File </label>
+                </div>
+                <div class="col-md-4">
+                    <label for="importFile" class="file-upload">Choose File
+                    <input type="file" id="importFile">
+                    </label>
+                </div>
+                <div class="col-md-4">
+                    <button id="importButton">Import</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <!--
+        <h2>Password Manager</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+
+        <button id="storePassword">Store Password</button>
+
+        <h3>Password Strength: <span id="passwordStrength">Weak</span></h3>
+
+        <label for="accountSelect">Select Account:</label>
+        <select id="accountSelect"></select>
+
+        <button id="retrievePassword">Retrieve Password</button>
+
+        <h3>Passwords:</h3>
+        <ul id="passwordList"></ul>
+
+        <button id="exportButton">Export Passwords</button>
+
+        <label for="importFile" class="file-upload">Choose File
+            <input type="file" id="importFile">
+        </label>
+        <button id="importButton">Import</button>
+         -->
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
